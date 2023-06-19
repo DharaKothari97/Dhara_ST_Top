@@ -1,0 +1,2676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0034)http://localhost:5050/show_bug.cgi -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Full Text Bug Listing</title>
+
+
+<link rel="Top" href="http://localhost:5050/show_bug.cgi">
+
+  
+
+
+  
+
+
+  
+    <link rel="Saved Searches" title="My Bugs" href="http://localhost:5050/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;email1=tops%40tops-int.com&amp;field0-0-0=bug_status&amp;type0-0-0=notequals&amp;value0-0-0=UNCONFIRMED&amp;field0-0-1=reporter&amp;type0-0-1=equals&amp;value0-0-1=tops%40tops-int.com">
+
+
+
+   <link rel="Administration" title="Parameters" href="http://localhost:5050/editparams.cgi"><link rel="Administration" title="Users" href="http://localhost:5050/editusers.cgi"><link rel="Administration" title="Products" href="http://localhost:5050/editproducts.cgi"><link rel="Administration" title="Flag Types" href="http://localhost:5050/editflagtypes.cgi"><link rel="Administration" title="Groups" href="http://localhost:5050/editgroups.cgi"><link rel="Administration" title="Keywords" href="http://localhost:5050/editkeywords.cgi"><link rel="Administration" title="Whining" href="http://localhost:5050/editwhines.cgi"><link rel="Administration" title="Sanity Check" href="http://localhost:5050/sanitycheck.cgi">
+
+
+    
+
+    
+      <link href="./BugTextfiles_product module_files/global.css" rel="stylesheet" type="text/css">
+      <link href="./BugTextfiles_product module_files/show_multiple.css" rel="stylesheet" type="text/css">
+      <link href="./BugTextfiles_product module_files/buglist.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 7]>
+      
+      <link href="skins/standard/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+    
+        <link href="./BugTextfiles_product module_files/global.css" rel="alternate stylesheet" title="Classic" type="text/css">
+        <link href="./BugTextfiles_product module_files/show_multiple.css" rel="alternate stylesheet" title="Classic" type="text/css">
+        <link href="./BugTextfiles_product module_files/buglist.css" rel="alternate stylesheet" title="Classic" type="text/css">
+      <!--[if lte IE 7]>
+      
+        <link href="skins/standard/IE-fixes.css"
+              rel="alternate stylesheet"
+              title="Classic"
+              type="text/css">
+      <![endif]-->
+
+    
+        
+            <link href="./BugTextfiles_product module_files/global(1).css" rel="stylesheet" title="Dusk" type="text/css">
+            <link href="./BugTextfiles_product module_files/show_multiple(1).css" rel="stylesheet" title="Dusk" type="text/css">
+            <link href="./BugTextfiles_product module_files/buglist(1).css" rel="stylesheet" title="Dusk" type="text/css">
+        <!--[if lte IE 7]>
+          
+          <link href="skins/contrib/Dusk/IE-fixes.css"
+                rel="stylesheet"
+                title="Dusk"
+                type="text/css">
+        <![endif]-->
+
+    
+
+    
+        <link href="./BugTextfiles_product module_files/global(2).css" rel="stylesheet" type="text/css">
+        <link href="./BugTextfiles_product module_files/show_multiple(2).css" rel="stylesheet" type="text/css">
+        <link href="./BugTextfiles_product module_files/buglist(2).css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 7]>
+      
+      <link href="skins/custom/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+    <script src="./BugTextfiles_product module_files/yahoo-dom-event.js.download" type="text/javascript"></script>
+    <script src="./BugTextfiles_product module_files/cookie.js.download" type="text/javascript"></script>
+    <script src="./BugTextfiles_product module_files/global.js.download" type="text/javascript"></script>
+    <script type="text/javascript">
+    <!--
+        YAHOO.namespace('bugzilla');
+        if (YAHOO.env.ua.gecko) {
+            YAHOO.util.Event._simpleRemove(window, "unload", 
+                                           YAHOO.util.Event._unload);
+        }
+        
+        function unhide_language_selector() { 
+            YAHOO.util.Dom.removeClass(
+                'lang_links_container', 'bz_default_hidden'
+            ); 
+        } 
+        YAHOO.util.Event.onDOMReady(unhide_language_selector);
+
+        
+        var BUGZILLA = {
+            param: {
+                cookiepath: '\/'
+            },
+
+            string: {
+                attach_desc_required:
+                    'You must enter a Description for this attachment.'
+            }
+        };
+    // -->
+    </script>
+
+
+    
+
+    
+    <link rel="search" type="application/opensearchdescription+xml" title="Bugzilla" href="http://localhost:5050/search_plugin.cgi">
+    <link rel="shortcut icon" href="http://localhost:5050/images/favicon.ico">
+  <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+
+
+
+  <body onload="" class="">
+
+
+
+<div id="header">
+<div id="banner">
+  </div>
+
+<table border="0" cellspacing="0" cellpadding="0" id="titles">
+<tbody><tr>
+    <td id="title">
+      <p>Bugzilla – Full Text Bug Listing</p>
+    </td>
+
+
+</tr>
+</tbody></table>
+
+<table id="lang_links_container" cellpadding="0" cellspacing="0"><tbody><tr><td>
+</td></tr></tbody></table>
+<ul class="links">
+  <li><a href="http://localhost:5050/">Home</a></li>
+  <li><span class="separator">| </span><a href="http://localhost:5050/enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="http://localhost:5050/describecomponents.cgi">Browse</a></li>
+  <li><span class="separator">| </span><a href="http://localhost:5050/query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="http://localhost:5050/buglist.cgi" method="get" onsubmit="if (this.quicksearch.value == &#39;&#39;)
+                  { alert(&#39;Please enter one or more search terms first.&#39;);
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_top" name="quicksearch">
+    <input class="btn" type="submit" value="Search" id="find_top"></form>
+  <a href="http://localhost:5050/page.cgi?id=quicksearch.html" title="Quicksearch Help">[?]</a></li>
+
+  <li><span class="separator">| </span><a href="http://localhost:5050/report.cgi">Reports</a></li>
+
+  <li></li>
+
+    <li><span class="separator">| </span><a href="http://localhost:5050/userprefs.cgi">Preferences</a></li>
+      <li><span class="separator">| </span><a href="http://localhost:5050/admin.cgi">Administration</a></li>
+<li>
+        <span class="separator">| </span>
+        <a href="http://localhost:5050/docs/en/html/bug_page.html" target="_blank">Help</a>
+      </li>
+
+    <li>
+      <span class="separator">| </span>
+        <a href="http://localhost:5050/index.cgi?logout=1">Log&nbsp;out</a>
+        tops@tops-int.com</li>
+</ul>
+</div> 
+
+<div id="bugzilla-body"><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=28">28</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When user sort by product ascending or descending wise, it is not working properly.</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_major">major
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Highest">Highest
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>24.0
+              </td>
+              <td>24.0
+              </td>
+              <td>0.0</td>
+              <td>24.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-20</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=18">https://drive.google.com/file/d/1M5aVNT5XUsq8Ar_6POBIdznNlR2ueTrY/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=28#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 10:35:43 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=18" name="attach_18" title="https://drive.google.com/file/d/1M5aVNT5XUsq8Ar_6POBIdznNlR2ueTrY/view?usp=drive_link">attachment 18</a> <a href="http://localhost:5050/attachment.cgi?id=18&amp;action=edit" title="https://drive.google.com/file/d/1M5aVNT5XUsq8Ar_6POBIdznNlR2ueTrY/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/1M5aVNT5XUsq8Ar_6POBIdznNlR2ueTrY/view?usp=drive_link">https://drive.google.com/file/d/1M5aVNT5XUsq8Ar_6POBIdznNlR2ueTrY/view?usp=drive_link</a>
+
+1) open the browser                     2)enter the URL
+:(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in web address                     
+                             3) press the enter key                            
+       4) click on create account    5) click on login button                  
+                   6) click on women wear im shop catagory                     
+        7)click on position of product</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=29">29</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When check the color of products its all color is not available properly.</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_major">major
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Highest">Highest
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>3.0
+              </td>
+              <td>3.0
+              </td>
+              <td>0.0</td>
+              <td>3.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-19</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=19">https://drive.google.com/file/d/1H3tv2PNFliQOE2uthNE9oM-wZoE1pkwd/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=29#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 10:38:21 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=19" name="attach_19" title="https://drive.google.com/file/d/1H3tv2PNFliQOE2uthNE9oM-wZoE1pkwd/view?usp=drive_link">attachment 19</a> <a href="http://localhost:5050/attachment.cgi?id=19&amp;action=edit" title="https://drive.google.com/file/d/1H3tv2PNFliQOE2uthNE9oM-wZoE1pkwd/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/1H3tv2PNFliQOE2uthNE9oM-wZoE1pkwd/view?usp=drive_link">https://drive.google.com/file/d/1H3tv2PNFliQOE2uthNE9oM-wZoE1pkwd/view?usp=drive_link</a>
+
+1) open the browser                     2)enter the URL
+:(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in web address                     
+                             3) press the enter key                            
+       4) click on create account    5) click on login button                  
+                   6) click on women wear im shop catagory                     
+        7)click on shopping option cick on catagory                            
+ 8) click on color</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=30">30</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When user select product color different then it is shows the different color then the selected color.</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_major">major
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Highest">Highest
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>6.0
+              </td>
+              <td>6.0
+              </td>
+              <td>0.0</td>
+              <td>6.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-19</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=20">https://drive.google.com/file/d/1J5J1y7HKFVgzqw0iM222An_X0vXRpcmt/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=30#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 10:42:40 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=20" name="attach_20" title="https://drive.google.com/file/d/1J5J1y7HKFVgzqw0iM222An_X0vXRpcmt/view?usp=drive_link">attachment 20</a> <a href="http://localhost:5050/attachment.cgi?id=20&amp;action=edit" title="https://drive.google.com/file/d/1J5J1y7HKFVgzqw0iM222An_X0vXRpcmt/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/1J5J1y7HKFVgzqw0iM222An_X0vXRpcmt/view?usp=drive_link">https://drive.google.com/file/d/1J5J1y7HKFVgzqw0iM222An_X0vXRpcmt/view?usp=drive_link</a>
+
+1) open the browser                     2)enter the URL
+:(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in web address                     
+                             3) press the enter key                            
+         4) click on login button                                      5) click
+on women wear im shop catagory                                                 
+  6) To click on hoodies &amp; Swatshirts                        7) To click on
+color of product</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=27">27</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When user click on Eros  button, it is not working properly.</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_minor">minor
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Low">Low
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>5.0
+              </td>
+              <td>5.0
+              </td>
+              <td>0.0</td>
+              <td>5.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-19</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=17">https://drive.google.com/file/d/1lskyieioVngDI42R0Oo5xHrTj1iBvxjM/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=27#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 10:31:48 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=17" name="attach_17" title="https://drive.google.com/file/d/1lskyieioVngDI42R0Oo5xHrTj1iBvxjM/view?usp=drive_link">attachment 17</a> <a href="http://localhost:5050/attachment.cgi?id=17&amp;action=edit" title="https://drive.google.com/file/d/1lskyieioVngDI42R0Oo5xHrTj1iBvxjM/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/1lskyieioVngDI42R0Oo5xHrTj1iBvxjM/view?usp=drive_link">https://drive.google.com/file/d/1lskyieioVngDI42R0Oo5xHrTj1iBvxjM/view?usp=drive_link</a>
+
+1) open the browser                                                           
+2)enter the URL :(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in web address     
+                                             3) press the enter key            
+                                                 4) click on create account     
+5) click on login button                                                       
+  6) click on women wear in shop category                                      
+         7)click check on ascending and descending Oder
+
+==&gt; When user click on Eros Ascending and Descending order, it is not working
+properly.</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=31">31</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When user entered maximum value in Zip code, then it is not send any error message .</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_normal">normal
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Low">Low
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>6.0
+              </td>
+              <td>6.0
+              </td>
+              <td>0.0</td>
+              <td>6.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-19</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=21">https://drive.google.com/file/d/1kNUcvhURRVNLmPDIC-zvdDPTjENjPaol/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=31#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 10:55:11 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=21" name="attach_21" title="https://drive.google.com/file/d/1kNUcvhURRVNLmPDIC-zvdDPTjENjPaol/view?usp=drive_link">attachment 21</a> <a href="http://localhost:5050/attachment.cgi?id=21&amp;action=edit" title="https://drive.google.com/file/d/1kNUcvhURRVNLmPDIC-zvdDPTjENjPaol/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/1kNUcvhURRVNLmPDIC-zvdDPTjENjPaol/view?usp=drive_link">https://drive.google.com/file/d/1kNUcvhURRVNLmPDIC-zvdDPTjENjPaol/view?usp=drive_link</a>
+
+1) open the browser                                                         
+2)enter the URL :(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in web address     
+                                             3) press the enter key            
+                                               4)click on login button         
+                                                                               
+5) To click on add to cart                                                     
+   6) To click on proceed to checkout                                          
+  7)To enter the zip code maximum digit                                         
+name:  Krishna                                                                 
+    last name: patel                                                           
+  Steet Address:                                                               
+           city:  surat                                                        
+                        state province:   Gujrat                               
+                          Zip postal code: 123245678989                         
+country: India                                                                 
+Phon number:   2334556687</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=32">32</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When user entered special character in Zip code, Zip code is accept special character, then it is not send any error message.</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_normal">normal
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Low">Low
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>24.0
+              </td>
+              <td>24.0
+              </td>
+              <td>0.0</td>
+              <td>24.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-20</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=22">https://drive.google.com/file/d/1oeI-xATqV-EObekg_iKRQgctNtbTJMG5/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=32#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 10:59:27 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=22" name="attach_22" title="https://drive.google.com/file/d/1oeI-xATqV-EObekg_iKRQgctNtbTJMG5/view?usp=drive_link">attachment 22</a> <a href="http://localhost:5050/attachment.cgi?id=22&amp;action=edit" title="https://drive.google.com/file/d/1oeI-xATqV-EObekg_iKRQgctNtbTJMG5/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/1oeI-xATqV-EObekg_iKRQgctNtbTJMG5/view?usp=drive_link">https://drive.google.com/file/d/1oeI-xATqV-EObekg_iKRQgctNtbTJMG5/view?usp=drive_link</a>
+
+1) open the browser                                                           
+2)enter the URL :(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in web address     
+                                             3) press the enter key            
+                                                  4)click on login button      
+                                                                               
+   5) To click on add to cart                                                  
+        6) To click on proceed to checkout                                     
+         7)To enter the zip code special caracter digit                        
+         name:  Krishna                                                        
+           last name: patel                                                    
+                     Steet Address:                                            
+                                                        city:                  
+                                                          state province:  
+Gujrat                                                             Zip postal
+code: #$@$^&amp;**                                                    
+country: India                                                                 
+ Phon number:   2334556687</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=33">33</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When user entered minimum value in Zip code , Zip code field not send any error message.</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_normal">normal
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Low">Low
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>48.0
+              </td>
+              <td>48.0
+              </td>
+              <td>0.0</td>
+              <td>48.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-21</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=23">https://drive.google.com/file/d/1OgtWcuZpNNdU-epWsDGa6Ld9Os4Qe7Ub/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=33#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 11:04:25 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=23" name="attach_23" title="https://drive.google.com/file/d/1OgtWcuZpNNdU-epWsDGa6Ld9Os4Qe7Ub/view?usp=drive_link">attachment 23</a> <a href="http://localhost:5050/attachment.cgi?id=23&amp;action=edit" title="https://drive.google.com/file/d/1OgtWcuZpNNdU-epWsDGa6Ld9Os4Qe7Ub/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/1OgtWcuZpNNdU-epWsDGa6Ld9Os4Qe7Ub/view?usp=drive_link">https://drive.google.com/file/d/1OgtWcuZpNNdU-epWsDGa6Ld9Os4Qe7Ub/view?usp=drive_link</a>
+
+1) open the browser                                                            
+                 2)enter the URL :(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in
+web address                                                   3) press the
+enter key                                                        4)click on
+login button                                                                   
+                      5) To click on add to cart                               
+                           6) To click on proceed to checkout                  
+                           7)To enter the zip code minimum digit                
+name:  Krishna                                                                 
+   last name: patel                                                            
+ Steet Address:                                                                
+             city:                                                             
+                   state province:   Gujrat                                     
+Zip postal code: 2143                                                          
+country: India                                                                 
+           Phon number:   2334556687</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=34">34</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When user entered only Zero digit in Zip code, Zip code field not send any error message.</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_normal">normal
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Low">Low
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>24.0
+              </td>
+              <td>24.0
+              </td>
+              <td>0.0</td>
+              <td>24.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-20</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=24">https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=34#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 11:07:36 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=24" name="attach_24" title="https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link">attachment 24</a> <a href="http://localhost:5050/attachment.cgi?id=24&amp;action=edit" title="https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link">https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link</a>
+
+1) open the browser                     2)enter the URL
+:(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in web address                     
+                             3) press the enter key                            
+       4)click on login button                                                 
+                                        5) To click on add to cart             
+           6) To click on proceed to checkout                   7)To enter the
+zip code onlly zero digit    name:  Krishna                                    
+    last name: patel                               Steet Address:              
+                                          city:                                
+  state province:   Gujrat                             Zip postal code:  000000
+                  country: India                          Phon number:  
+2334556687</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=35">35</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When user entered maximum digit in  phone number field, then phone number filed not send any error message.</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_normal">normal
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Low">Low
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>10.0
+              </td>
+              <td>10.0
+              </td>
+              <td>0.0</td>
+              <td>10.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-19</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=25">https://drive.google.com/file/d/1w9H9TOExyAU2EhmWi9AMYozw88-P8PE8/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=35#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 11:11:59 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=25" name="attach_25" title="https://drive.google.com/file/d/1w9H9TOExyAU2EhmWi9AMYozw88-P8PE8/view?usp=drive_link">attachment 25</a> <a href="http://localhost:5050/attachment.cgi?id=25&amp;action=edit" title="https://drive.google.com/file/d/1w9H9TOExyAU2EhmWi9AMYozw88-P8PE8/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/1w9H9TOExyAU2EhmWi9AMYozw88-P8PE8/view?usp=drive_link">https://drive.google.com/file/d/1w9H9TOExyAU2EhmWi9AMYozw88-P8PE8/view?usp=drive_link</a>
+
+1) open the browser                                                            
+      2)enter the URL :(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in web
+address                                                   3) press the enter
+key                                                                    4)click
+on login button                                                                
+                         5) To click on add to cart                            
+                                     6) To click on proceed to checkout        
+                                                7)To enter the maximum mobile
+number                                            
+name:  Krishna                                                                 
+    last name: patel                                                           
+  Steet Address:                                                               
+           city:                                                               
+                                          state province:   Gujrat             
+                                                  Zip postal code: 2143        
+ country: India                                               Phon number:  
+233455668745766</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table><h1>Bug 
+    <a href="http://localhost:5050/show_bug.cgi?id=36">36</a>
+  </h1>
+
+  <table class="bugfields">
+    
+
+    
+<tbody><tr>
+    <th>Summary:</th>
+    <td colspan="3">When user entered minimum value in phone number field, then it is not send any error message.</td>
+  </tr>
+
+    <tr>
+      <th>Product:</th>
+      <td>LUMA
+      </td>
+<th class="rightcell">Reporter:</th>
+      <td>Tops &lt;tops@tops-int.com&gt;</td>
+    </tr>
+<tr>
+    <th>Component:</th>
+    <td>Product Module</td><th class="rightcell">Assignee:</th>
+      <td>Dharm &lt;dharm@gmail.com&gt;</td>
+  </tr>
+
+    <tr>
+      <th>Status:</th>
+      <td>ASSIGNED
+        ---
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>Severity:</th>
+      <td class="bz_normal">normal
+      </td>
+<th class="rightcell">CC:</th>
+      <td>mayur@gmail.com
+    </td></tr>
+
+    <tr>
+      <th>Priority:</th>
+      <td class="bz_Low">Low
+      </td>
+<td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+<tr>
+    <th>Version:</th>
+    <td>0.1</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>Hardware:</th>
+    <td>PC</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr><tr>
+    <th>OS:</th>
+    <td>Windows</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+
+    
+
+
+      <tr>
+        <th>Time tracking:</th>
+        <td colspan="3">
+          <table class="timetracking">
+            <tbody><tr>
+              <th>Orig. Est.</th>
+              <th>Actual Hours</th>
+              <th>Hours Worked</th>
+              <th>Hours Left</th>
+              <th>%Complete</th>
+              <th>Gain</th>
+            </tr>
+            <tr>
+              <td>12.0
+              </td>
+              <td>12.0
+              </td>
+              <td>0.0</td>
+              <td>12.0
+              </td>
+              <td>0
+              </td>
+              <td>0.0
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr><tr>
+    <th>Deadline:</th>
+    <td>2023-06-19</td><td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+      <tr>
+        <th>Attachments:</th>
+        <td colspan="3">
+              <a href="http://localhost:5050/attachment.cgi?id=26">https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link
+              </a>
+        </td>
+      </tr>
+  
+   
+  </tbody></table>
+
+
+  <br>
+<script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+
+  /* The functions below expand and collapse comments  */
+
+  function toggle_comment_display(link, comment_id) {
+    var comment = document.getElementById('comment_text_' + comment_id);
+    var re = new RegExp(/\bcollapsed\b/);
+    if (comment.className.match(re))
+        expand_comment(link, comment);
+    else
+        collapse_comment(link, comment);
+  }
+
+  function toggle_all_comments(action) {
+    var num_comments = 1;
+
+    // If for some given ID the comment doesn't exist, this doesn't mean
+    // there are no more comments, but that the comment is private and
+    // the user is not allowed to view it.
+
+    for (var id = 0; id < num_comments; id++) {
+        var comment = document.getElementById('comment_text_' + id);
+        if (!comment)
+            continue;
+
+        var link = document.getElementById('comment_link_' + id);
+        if (action == 'collapse')
+            collapse_comment(link, comment);
+        else
+            expand_comment(link, comment);
+    }
+  }
+
+  function collapse_comment(link, comment) {
+    link.innerHTML = "[+]";
+    link.title = "Expand the comment.";
+    YAHOO.util.Dom.addClass(comment, 'collapsed');
+  }
+
+  function expand_comment(link, comment) {
+    link.innerHTML = "[-]";
+    link.title = "Collapse the comment";
+    YAHOO.util.Dom.removeClass(comment, 'collapsed');
+  }
+
+  /* This way, we are sure that browsers which do not support JS
+   * won't display this link  */
+
+  function addCollapseLink(count) {
+    document.write(' <a href="#" class="bz_collapse_comment"' +
+                   ' id="comment_link_' + count +
+                   '" onclick="toggle_comment_display(this, ' +  count +
+                   '); return false;" title="Collapse the comment.">[-]<\/a> ');
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tbody><tr>
+<td>
+<div class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a name="c0" href="http://localhost:5050/show_bug.cgi?id=36#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user"><span class="vcard"><a class="email" href="mailto:tops@tops-int.com" title="Tops &lt;tops@tops-int.com&gt;"> <span class="fn">Tops</span></a>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2023-06-19 11:15:54 IST
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text">Created <span class=""><a href="http://localhost:5050/attachment.cgi?id=26" name="attach_26" title="https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link">attachment 26</a> <a href="http://localhost:5050/attachment.cgi?id=26&amp;action=edit" title="https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link">[details]</a></span>
+<a href="https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link">https://drive.google.com/file/d/14UQhGYryAO6UGm_HUWYrUmCWViR_B2Dz/view?usp=drive_link</a>
+
+1) open the browser                                                         
+2)enter the URL :(<a href="https://magento.softwaretestingboard.com/">https://magento.softwaretestingboard.com</a>) in web address     
+                                             3) press the enter key            
+                                           4)click on login button             
+                                                                            5)
+To click on add to cart                                                       
+6) To click on proceed to checkout                                             
+7)To enter the maximum mobile number                                          
+name:  Krishna                                                                 
+last name: patel                                                               
+             Steet Address:                                                    
+                           city:                                               
+                                         state province:   Gujrat              
+                                                    Zip postal code: 2143      
+                                                                     country:
+India                                                                          
+                 Phon number:   233455668745766</pre>
+    </div>
+  
+
+  
+
+</td>
+<td>
+</td>
+</tr></tbody></table>
+    <div class="bz_query_buttons">
+      <form method="post" action="http://localhost:5050/buglist.cgi">
+        <input type="hidden" name="bug_id" value="28,29,30,27,31,32,33,34,35,36">
+        <input type="submit" id="short_format" value="Short Format">
+      </form>
+    </div>
+
+</div>
+
+
+
+<div id="footer">
+  <div class="intro"></div>
+
+
+
+
+<ul id="useful-links">
+  <li id="links-actions"><ul class="links">
+  <li><a href="http://localhost:5050/">Home</a></li>
+  <li><span class="separator">| </span><a href="http://localhost:5050/enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="http://localhost:5050/describecomponents.cgi">Browse</a></li>
+  <li><span class="separator">| </span><a href="http://localhost:5050/query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="http://localhost:5050/buglist.cgi" method="get" onsubmit="if (this.quicksearch.value == &#39;&#39;)
+                  { alert(&#39;Please enter one or more search terms first.&#39;);
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_bottom" name="quicksearch">
+    <input class="btn" type="submit" value="Search" id="find_bottom"></form>
+  <a href="http://localhost:5050/page.cgi?id=quicksearch.html" title="Quicksearch Help">[?]</a></li>
+
+  <li><span class="separator">| </span><a href="http://localhost:5050/report.cgi">Reports</a></li>
+
+  <li></li>
+
+    <li><span class="separator">| </span><a href="http://localhost:5050/userprefs.cgi">Preferences</a></li>
+      <li><span class="separator">| </span><a href="http://localhost:5050/admin.cgi">Administration</a></li>
+<li>
+        <span class="separator">| </span>
+        <a href="http://localhost:5050/docs/en/html/bug_page.html" target="_blank">Help</a>
+      </li>
+
+    <li>
+      <span class="separator">| </span>
+        <a href="http://localhost:5050/index.cgi?logout=1">Log&nbsp;out</a>
+        tops@tops-int.com</li>
+</ul>
+  </li>
+
+  
+    
+    <li id="links-saved">
+      <ul class="links">
+          <li><a href="http://localhost:5050/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;email1=tops%40tops-int.com&amp;field0-0-0=bug_status&amp;type0-0-0=notequals&amp;value0-0-0=UNCONFIRMED&amp;field0-0-1=reporter&amp;type0-0-1=equals&amp;value0-0-1=tops%40tops-int.com">My Bugs</a></li>
+
+      </ul>
+    </li>
+
+  
+
+
+  
+</ul>
+
+  <div class="outro"></div>
+</div>
+
+
+
+</body></html>
